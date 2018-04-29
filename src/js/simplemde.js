@@ -1483,6 +1483,7 @@ SimpleMDE.prototype.render = function(el) {
 		mode: mode,
 		backdrop: backdrop,
 		theme: "paper",
+		inputStyle: "textarea", // Work around until android support is fixed, contenteditable mode only fires for space or other special chars
 		tabSize: (options.tabSize != undefined) ? options.tabSize : 2,
 		indentUnit: (options.tabSize != undefined) ? options.tabSize : 2,
 		indentWithTabs: (options.indentWithTabs === false) ? false : true,
